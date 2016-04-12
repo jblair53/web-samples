@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: .75em;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	background-color: #FFF;
+	background-image: url(images/BG-blue.jpg);
+	background-repeat: repeat-x;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+a, a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+a:visited {
+	color: #145eac;
+}
+/* ~~ this fixed width container surrounds the other divs ~~ */
+#container {
+	position: relative;
+	width: 944px;
+	background: #FFF;
+	-moz-box-shadow: 0 0 8px #888;
+    -webkit-box-shadow: 0 0 8px #888;
+    box-shadow: 0 0 9px #888;
+	border-color: #b6c5e4;
+	border-style: solid;
+	border-width: 0 1px;
+	margin: 20px auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ the header is not given a width. It will extend the full width of the layout. ~~ */
+#header {
+	padding: 0;
+	margin: 0;
+}
+#header img {
+	float: left;
+	text-decoration: none;
+}
+/*properties for the content section  */
+#content a{ /*link properties*/
+	color: #145eac;
+	text-decoration: none;
+}
+#content a:hover {/*mouseover properties*/
+	font-weight: bold;
+}
+#content p {
+	padding: 0;
+	margin: 0 0 1em 0;
+	line-height: 1.6em;
+}
+#content p span {
+	color: #145eac;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.9em;
+}
+#content h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #b31e3a;
+	font-size: 2em;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 .6em 0;
+}
+#content h2 {
+	margin: 0 0 .7em 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+#content li {
+	list-style: disc;
+	padding: 0 0 .4em 0;
+	line-height: 1.4em;
+}
+#content li li{
+	list-style: disc;
+	padding: .2em;
+}
+.contentLeft { /*sets margins for content div that is on the left*/
+	margin: 10px 350px 35px 60px;
+	padding: 0;
+}
+.contentRight { /*sets margins for content div that is on the right*/
+	margin: 10px 60px 35px 350px;
+	padding: 0;
+}
+.contentCenter {/*sets margins for content div that is centered */
+	margin: 10px 90px 35px 90px;
+	padding: 0;
+}
+/*properties for the navigation bar and the drop down menu at the top */
+#navBar *{
+	margin: 0;
+	padding: 0;
+}
+#navBar {/*top navigation container*/
+	float: left;
+	background-color: #145eac;
+	width: 100%;
+	background: url(images/navBG.gif) repeat-x;
+	height: 26px;
+/*	border-bottom: 2px solid #114d8c;
+	border-top: 2px solid #5299e5;*/
+}
+#navBar ul{/*top navigation */
+	list-style-type: none;
+	float: left;
+}
+#navBar li{ /*properties for top navigation list*/ 
+	position: relative; 
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: .1em;
+	border-right: 2px solid #5299e5;
+	border-left: 2px solid #114d8c;
+	height: 26px;
+}
+#navBar li:last-child {
+	padding: 0 6px;
+}
+#navBar li a {/*properties for top navigation links*/
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 26px;
+}
+#navBar li:hover { /*mouseover properties for top nav links*/
+	background: url(images/navBG_O.gif) repeat-x;
+	border-right: 2px solid #f7484f;
+	border-left: 2px solid #92132b;
+}
+#navBar li a:hover { /*mouseover properties for top nav links*/
+	text-decoration: none;
+	color: #fff;
+}
+#navBar li ul { /*properties for top navigation SUB MENU container*/
+	padding: 0;  
+	position: absolute; 
+	top: 26px; 
+	left: 0;
+	border-style: solid; 
+	border-color: #b31e26;
+	border-width: 0px 1px 1px 1px; 
+	width: 220px; 
+	display: none; 
+	background: #fdfbef;
+	z-index: 100;
+}
+#navBar li:hover ul { /*displays SUB MENU as block on mouseover*/
+	display: block;
+}
+#navBar li ul li {/*properties for SUB MENU ITEMS */
+	border: none;
+	width: 100%;
+	background: #fdfbef url(none);
+	padding: 0;
+}
+#navBar li ul li:last-child { /*removes line under last item*/
+	border-bottom: none;
+	padding: 0;
+}
+#navBar li ul li a {/*properties for top nav SUB MENU links*/
+	color: #333;
+	background: #fdfbef;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: normal;
+	padding: 5px;
+	border-bottom: 1px;
+	border-bottom-color: #e0dbc0;
+	border-bottom-style: solid;
+}
+#navBar li:hover ul li  {/*removes top nav properties from SUB MENU mouseover*/
+	border: none;
+	background: url(none);
+}
+#navBar li ul li:hover a {/*changes color of SUB MENU on mouseover*/
+	color: #b31e26;
+	background: #faf5d8 url(none);
+}
+/*properties for sidebar*/
+.sidebarShadow {/*use for large sidebar*/
+	position: absolute;
+	left: 17px;
+	top: 295px;
+}
+.sidebarShadow2 {/*use for small sidebar*/
+	position: absolute;
+	left: 19px;
+	top: 307px;
+}
+.sidebarShadow3 {/*use for careers page sidebar*/
+	position: absolute;
+	left: 17px;
+	top: 470px;
+}
+.sidebar {/*{sub menu that appears to the left of content*/
+	width: 270px;
+	position: absolute;
+	left: 34px;
+	top: 292px;
+	z-index: 10;
+	background-color: #fff;
+	border-width: 8px 1px 1px 1px;
+	border-style: solid;
+	border-top-color: #b31e3a;
+	border-right-color: #b6c5e4;
+	border-left-color: #b6c5e4;
+	border-bottom-color: #b6c5e4;
+}
+.sidebar p{
+	margin: 0;
+	padding: 10px;
+}
+.sidebar a{
+	text-decoration: none;
+	font-weight: bold;
+}
+.sidebar dl {/*definition list */
+	margin: 0;
+	padding: 0 10px;
+}
+.sidebar dt {/*properties of sidebar menu items*/
+	font-family: Verdana, Geneva, sans-serif;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b6c5e4;
+	padding: 8px 0 8px 7px;
+	font-weight: bold;
+}
+.sidebar dt:first-child {/*changes first sidebar menu item color to red*/
+	color: #b31e3a;
+	font-weight: bold;
+	padding: 10px 0;
+	border-top: none;
+	letter-spacing: .03em;
+}
+.sidebar dt a{/*properties of sidebar links*/
+	font-weight: normal;
+	color: #626262;
+	display: block;
+	text-decoration: none;
+	list-style-type: none;
+}
+.sidebar dt a:hover {/*properties of sidebar links on mouseover*/
+	color: #b31e3a;
+}
+.sidebar dd {/*properties of second level sidebar items*/
+	margin: 0;
+	color: #626262;
+	padding: 5px 0 5px 15px;
+	text-decoration: none;
+	list-style-type: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b6c5e4;
+	font-weight: bold;
+}
+ .sidebar dd a {/*properties of second level sidebar links*/
+	display: block;
+	color: #626262;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+.sidebar dd a:hover { /*properties of second level sidebar links on mouseover*/
+	color: #b31e3a;
+}
+/* ~~ The footer ~~ */
+#footer {
+	padding: 1px;
+	background: #fff;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b6c5e4;
+	margin: 0 10px;
+}
+#footer p {
+	font-size: .95em;
+	text-align: center;
+	color: #626262;
+}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.apDiv1 {/*home page sdvosb logo*/
+	margin: 0px;
+	padding: 0px;
+	height: 93px;
+	width: 98px;
+	top: 6px;
+	right: 64px;
+	position: absolute;
+	z-index: 100;
+}
+.apDiv2 {/*home page linkedIn logo*/
+	margin: 0px;
+	padding: 0px;
+	height: 28px;
+	width: 28px;
+	top: 67px;
+	right: 26px;
+	position: absolute;
+	z-index: 101;
+}
+.apDiv3 {/*home page linkedIn logo*/
+	margin: 0px;
+	padding: 0px;
+	height: 225px;
+	width: 400px;
+	top: 200px;
+	left: 50px;
+	position: absolute;
+	z-index: 102;
+	width: 300px;
+}
+.apDiv4 {/*link on home page on top of main image*/
+	position: absolute;
+	top: 372px;
+	left: 78px;
+	z-index: 103;
+	width: 300px;
+}

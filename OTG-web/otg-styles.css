@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #FFF;
+	background-image: url(archive/otg_images/otg-bg.jpg);
+	background-repeat: repeat-x;
+}
+.oneColFixCtrHdr #container {
+	width: 960px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	text-align: left;
+	border-right: solid 5px #ffffff;
+	border-left: solid 5px #ffffff;
+}
+.oneColFixCtrHdr #header {
+	background: #DDDDDD; 
+	padding: 0 0px 0 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.oneColFixCtrHdr #mainContent {
+	padding: 0 10px 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFFFFF;
+}
+.oneColFixCtrHdr #mainContent p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #465053;
+	line-height: 1.5em;
+	padding:0;
+}
+.oneColFixCtrHdr #mainContent .red{
+	color:#ed1c24;
+}
+.oneColFixCtrHdr #mainContent ul{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #465053;
+	line-height: 1.5em;
+	padding: 0 0 0 10px;
+}
+.oneColFixCtrHdr #footer {
+	margin: 0 80px;
+	padding: 0; 
+	background:#ffffff;
+	border-top: solid 1px #c9d0d2;
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #465053;
+	text-align: center;
+	line-height: 1.6em;
+}
+#navBar ul { /* styling for horizontal navigation bar*/
+	padding: 0;
+	margin: 0;
+	background-color: #ed1c24;
+	color: #ffffff;
+	float: left;
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 12px;
+	border-top: solid 5px #ffffff;
+}
+#navBar ul li { 
+	display: inline;
+}
+#navBar ul li a {
+	padding: 10px 30px 10px 30px;
+	background-color: #ed1c24;
+	color: #ffffff;
+	text-decoration: none;
+	float: left;
+}
+#navBar ul li a:hover {
+	color: #CCC;
+}
+.fltRight {
+	float: right;
+	margin: 0 0 0 15px;
+}
+.fltLft {
+	float: left;
+	margin-right: 10px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.pageTitles {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ed1c24;
+	padding: 60px 0 8px 0px;
+}
+.bold {
+	font-weight: bold;
+}
+.red {
+	font-size: 1em;
+	color:#ed1c24;
+	font-weight: bold;
+}
+.gold {
+	font-size: 1em;
+	color:#f38e2a;
+	font-weight: bold;
+}
+.blue {
+	font-size: 1em;
+	color:#34a0cf;
+	font-weight: bold;
+}
+table tr td ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.5em;
+}
+a:link {
+	color: #00aeef;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #047fad;
+}
+a:hover {
+	text-decoration: none;
+	color: #ed1c24;
+}
+a:active {
+	text-decoration: none;
+}
+.productsDiv {
+	float: left;
+	margin: 5px;
+	width: 295px;
+	border: 1px;
+	border-color: #CCC;
+	border-style: solid;
+	min-height: 350px;
+}	
+.energy {
+	background-image: url(archive/otg_images/energyBG.gif);
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+.tea {
+	background-image: url(archive/otg_images/teaBG.gif);
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+.sport {
+	background-image: url(archive/otg_images/sportBG.gif);
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+.tableTitles {
+	padding: 6px;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	background-image:url(archive/otg_images/tableTitleBG.gif);
+	background-repeat: repeat-x;
+}
+.bottlesFloat {
+	float: left;
+	padding-right: 20px;
+}

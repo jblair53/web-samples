@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	text-decoration: none;
+}
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background-color: #2f3c2a;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-image: url(images/BGcolor.gif);
+	background-repeat: repeat-x;
+}
+.twoColFixLtHdr #container {
+	width: 859px; 
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	border-right: solid 7px #8da385;
+	border-left: solid 7px #8da385;
+	border-bottom: solid 7px #8da385;
+} 
+.twoColFixLtHdr #header { 
+	background: #8da385;
+	position: relative; 
+} 
+.menu {
+	float: left; /* since this element is floated, a width must be given */
+	width: 240px; 
+	background: #FFFFFF;
+}
+.menu ul{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: .9em;
+	letter-spacing: .5em;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 15px;
+}
+.menu li a {
+	color: #8da385;
+	display: block;
+	padding: 20px 0 20px 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #8da385;
+}
+.menu li a:hover {
+	color: #a0410d;
+	border-bottom-width: 9px;
+	border-bottom-style: solid;
+	border-bottom-color: #edeac2;
+}
+.twoColFixLtHdr #mainContent {
+	margin: 0 0 0 250px;
+	padding: 0 20px 0 0;
+} 
+.twoColFixLtHdr #mainContent p{
+	font-size: 0.8em;
+	line-height: 1.7em;
+	color: #666;
+	padding: 0 160px 0 40px;
+	text-align: justify;
+} 
+.twoColFixLtHdr #mainContent a{
+	color: #4d7584;
+}
+.twoColFixLtHdr #mainContent a:hover{ 
+	font-weight: bold;
+}
+.twoColFixLtHdr #mainContent a:visited {
+	color: #a0410d;
+}
+.twoColFixLtHdr #footer {
+	padding: 0 20px 20px 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	text-align:center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #808000;
+	margin: 0 20px 0 20px; 
+} 
+.twoColFixLtHdr #footer p{ 
+	font-size: .75em;
+	color: #868139;
+}
+.twoColFixLtHdr #footer a{
+	color: #4d7584;
+}
+.twoColFixLtHdr #footer a:hover{ 
+	font-weight: bold;
+}
+.twoColFixLtHdr #footer a:visited {
+	color: #a0410d;
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+#rpDiv1 { /*use for Page heading when using image aligned to the left of the content div*/
+	position:relative;
+	left: -40px;
+	top:10px;
+	width:170px;
+	height:55px;
+	z-index:1;
+}
+#apDiv2 {/*shopping center image in header*/
+	position:absolute;
+	width:124px;
+	height:124px;
+	z-index:1;	
+	left:30px;
+	top:30px;
+}
+.centerImage{
+	margin-left: 35px;
+}
+
